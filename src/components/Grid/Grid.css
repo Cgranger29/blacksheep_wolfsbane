@@ -6,6 +6,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  color: navajowhite;
 }
 
 .grid_wrapper {
@@ -13,7 +14,7 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: minmax(50px, auto);
   grid-template-areas:
-    "hd hd hd hd hd hd"
+    "bg1 hd hd hd hd bg2"
     ". smed . . . ."
     ". about about about about ."
     ". ft1 ft1 image1 image1 ."
@@ -26,7 +27,6 @@ body {
 }
 
 .row {
-  background: navajowhite;
   margin: 0;
 }
 
@@ -49,10 +49,12 @@ body {
 
 .gif_1 {
   grid-area: gif;
+  justify-content: space-around;
 }
 
 .gif_2 {
   grid-area: gif2;
+  justify-content: space-around;
 }
 
 .footer {
@@ -72,15 +74,20 @@ h2 {
 
 .ft1 {
   grid-area: ft1;
-  justify-content: center;
+  align-self: center;
+  justify-self: center;
 }
 
 .ft2 {
   grid-area: ft2;
+  align-self: center;
+  justify-self: center;
 }
 
 .ft3 {
   grid-area: ft3;
+  align-self: center;
+  justify-self: center;
 }
 
 .ft1,
@@ -109,16 +116,35 @@ h2 {
 }
 
 .img3 {
-  width: 50%;
+  width: 35%;
   justify-self: center;
 }
 
 .img1 {
-  width: 100%;
+  width: 75%;
   justify-self: center;
 }
 
 .img2 {
-  width: 100%;
+  width: 75%;
   justify-self: center;
+}
+
+.bg1 {
+  grid-area: bg1;
+  background: black;
+  margin-right: -10px;
+}
+
+.bg2 {
+  grid-area: bg2;
+  background: black;
+  margin-left: -12px;
+}
+
+.logo {
+  position: absolute;
+  width: 12%;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }

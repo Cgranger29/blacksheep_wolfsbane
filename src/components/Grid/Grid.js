@@ -7,14 +7,20 @@ import Pic from "../Pic/Pic";
 import pic1 from "../../images/together.png";
 import pic2 from "../../images/poster-notext2.jpg";
 import pic3 from "../../images/characters.jpg";
+import header_image from "../../images/main_title.jpeg";
+import logo from "../../images/logo.png";
 
 class Grid extends React.Component {
   render() {
     return (
       <div className="grid_wrapper">
-        <div className="one row main_title">
-          <Header />
+        <div className="bg1">
+          <Pic pic={logo} cName="logo" />
         </div>
+        <div className="one row main_title">
+          <Header header_image={header_image} />
+        </div>
+        <div className="bg2" />
         <div className="two row social_media">
           <a href="#" className="fa fa-twitter" />
           Follow us on twitter
@@ -70,10 +76,12 @@ class Grid extends React.Component {
           <Pic pic={pic1} cName="img3" />
         </div>
         <div className="seven row gif_1">
-          <Gif vid={gif1} />
+          <Gif vid={gif1} cName="gif1" />
         </div>
 
-        <img className="eight row gif_2" src="" alt="gif2" />
+        <div className="eight row gif_2">
+          <Gif vid={gif1} cName="gif2" />
+        </div>
 
         <div className="nine row footer"> Footer </div>
       </div>

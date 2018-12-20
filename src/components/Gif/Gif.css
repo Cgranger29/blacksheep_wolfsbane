@@ -1,0 +1,11 @@
+.gif1 {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.gif2 {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
