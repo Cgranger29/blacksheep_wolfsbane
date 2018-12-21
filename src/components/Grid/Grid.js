@@ -23,7 +23,7 @@ class Grid extends React.Component {
         <div className="bg2" />
         <div className="two row social_media">
           <a href="#" className="fa fa-twitter" />
-          Follow us on twitter
+          Follow us on twitter (Where to put this)?
         </div>
         <div className="three row about">
           <h2>About The Game</h2>
@@ -44,27 +44,29 @@ class Grid extends React.Component {
             the darkness in his own heart on a desperate mission to save his
             beloved.
           </p>
-          <p> </p>
+          <hr />
         </div>
         <div className="four row ft1">
           <h3>ACTION PLATFORMING </h3>
           <p>
             RUN, WALL JUMP OR SLIDE INTO ACTION WHILER SHOOTING DEADLY ENEMIES!
           </p>
+          <hr />
         </div>
-        <div className="img1_container">
+        {/* <div className="img1_container">
           <Pic pic={pic2} cName="img1" />
-        </div>
+        </div> */}
         <div className="five row ft2">
           <h3>UNIQUE CHARACTERS </h3>
           <p>
             EVERY CHARACTER YOU ENCOUNTER HAS THEIR OWN PERSONALITY RANGING FROM
             GOOFY, FRIENDLY, ANGRY AND ANYTHING IN BETWEEN.
           </p>
+          <hr />
         </div>
-        <div className="img2_container">
+        {/* <div className="img2_container">
           <Pic pic={pic3} cName="img2" />
-        </div>
+        </div> */}
         <div className="six row ft3">
           <h3>HEARTWARMING STORY</h3>
           <p>
@@ -72,9 +74,9 @@ class Grid extends React.Component {
             YOUR ANGEL BUDDY.
           </p>
         </div>
-        <div className="img3_container">
+        {/* <div className="img3_container">
           <Pic pic={pic1} cName="img3" />
-        </div>
+        </div> */}
         <div className="seven row gif_1">
           <Gif vid={gif1} cName="gif1" />
         </div>

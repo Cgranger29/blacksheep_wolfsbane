@@ -17,9 +17,12 @@ body {
     "bg1 hd hd hd hd bg2"
     ". smed . . . ."
     ". about about about about ."
-    ". ft1 ft1 image1 image1 ."
+    /* ". ft1 ft1 image1 image1 ."
     ". image2 image2 ft2 ft2 ."
-    ". ft3 ft3 image3 image3 ."
+    ". ft3 ft3 image3 image3 ." */
+    ". ft1 ft1 ft1 ft1 ."
+    ". ft2 ft2 ft2 ft2 ."
+    ". ft3 ft3 ft3 ft3 ."
     ". gif gif gif2 gif2 ."
     "footer footer footer footer footer footer";
 
@@ -43,7 +46,8 @@ body {
 
 .about {
   grid-area: about;
-  font-family: "Press Start 2P", cursive;
+  /* font-family: "Press Start 2P", cursive; */
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
 
@@ -68,7 +72,8 @@ body {
   font-size: 75px;
 }
 
-h2 {
+h2,
+h3 {
   text-align: center;
 }
 
